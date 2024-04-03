@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Manipulation</title>
+</head>
+<body>
+    <h1>String Manipulation</h1>
+
+    <p id="originalString">Original String: Its a beautiful day</p>
+    <p id="slicedString"></p>
+    <p id="substringString"></p>
+    <p id="substrString"></p>
+
+    <script>
+        const originalString = "Its a beautiful day";
+    
+        const slicedString = originalString.slice(4, 10);
+        document.getElementById("slicedString").textContent = `Sliced String: ${slicedString}`;
+        const substringString = originalString.substring(11, 15);
+        document.getElementById("substringString").textContent = `Substring String: ${substringString}`;
+        const substrString = originalString.substr(16, 7);
+        document.getElementById("substrString").textContent = `Substr String: ${substrString}`;
+    </script>
+</body>
+</html>

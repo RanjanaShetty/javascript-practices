@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmetic Operations</title>
+</head>
+<body>
+    <h1>Arithmetic Operations</h1>
+
+    <div>
+        <p>Addition:</p>
+        <p id="additionResult"></p>
+    </div>
+
+    <div>
+        <p>Subtraction:</p>
+        <p id="subtractionResult"></p>
+    </div>
+
+    <div>
+        <p>Multiplication:</p>
+        <p id="multiplicationResult"></p>
+    </div>
+
+    <div>
+        <p>Division:</p>
+        <p id="divisionResult"></p>
+    </div>
+
+    <div>
+        <p>Modulus:</p>
+        <p id="modulusResult"></p>
+    </div>
+
+    <script>
+
+        let num1 = 10;
+        let num2 = 5;
+        let additionResult = num1 + num2;
+        document.getElementById("additionResult").textContent = `Result: ${additionResult}`;
+        let subtractionResult = num1 - num2;
+        document.getElementById("subtractionResult").textContent = `Result: ${subtractionResult}`;
+        let multiplicationResult = num1 * num2;
+        document.getElementById("multiplicationResult").textContent = `Result: ${multiplicationResult}`;
+        let divisionResult = num1 / num2;
+        document.getElementById("divisionResult").textContent = `Result: ${divisionResult}`;
+        let modulusResult = num1 % num2;
+        document.getElementById("modulusResult").textContent = `Result: ${modulusResult}`;
+    </script>
+</body>
+</html>
